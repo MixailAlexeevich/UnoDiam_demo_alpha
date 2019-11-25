@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Platform Headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Tech Headers">
+      <UniqueIdentifier>{d7e74213-f67b-43dd-b683-2e8b999d1be6}</UniqueIdentifier>
+      <Extensions>h;hh;hpp</Extensions>
+    </Filter>
+    <Filter Include="Platform Headers\Windows %28MSVC%29">
+      <UniqueIdentifier>{c4ea3efc-90bd-48d8-be7e-f8d6318366aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code service">
+      <UniqueIdentifier>{8137fe81-0169-4060-90c7-ce8832150db4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Start Processing">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Module Main">
+      <UniqueIdentifier>{be5ebe6c-f65d-4da9-a999-8e08f54a3f82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform Headers\Linux %28GNUC%29">
+      <UniqueIdentifier>{21f2e0c1-d710-43e4-8416-c4e63632206d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Compiler.h">
+      <Filter>Platform Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform.h">
+      <Filter>Platform Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatformBasic.h">
+      <Filter>Platform Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Tech Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform_Win32.h">
+      <Filter>Platform Headers\Windows %28MSVC%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform_Win64.h">
+      <Filter>Platform Headers\Windows %28MSVC%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Error.h">
+      <Filter>Code service</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Code service</Filter>
+    </ClInclude>
+    <ClInclude Include="ModuleBasic.h">
+      <Filter>Module Main</Filter>
+    </ClInclude>
+    <ClInclude Include="module_init.h">
+      <Filter>Start Processing</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform_Linux32.h">
+      <Filter>Platform Headers\Linux %28GNUC%29</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="modulef_load_init.cpp">
+      <Filter>Start Processing</Filter>
+    </ClCompile>
+    <ClCompile Include="libmain.cpp">
+      <Filter>Start Processing</Filter>
+    </ClCompile>
+    <ClCompile Include="VarGlob_Minit.cpp">
+      <Filter>Tech Headers</Filter>
+    </ClCompile>
+    <ClCompile Include="Error.cpp">
+      <Filter>Code service</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Code service</Filter>
+    </ClCompile>
+    <ClCompile Include="module_init_main.cpp">
+      <Filter>Start Processing</Filter>
+    </ClCompile>
+    <ClCompile Include="ModuleBasic.cpp">
+      <Filter>Module Main</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
